@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anxiété sociale</title>
+</head>
+<body>
+<p><form action="http://localhost:5000/Resultats_questionnaire" method="post">
+  <p>Avez-vous déjà réalisé ce questionnaire ?</p>
+     <input type="radio" id="choice_yes"
+     name="verification" value="anx_sociale">
+     <label for="choice_yes">Oui</label>
+
+     <input type="radio" id="choice_no"
+     name="verification" value="anx_sociale" checked>
+     <label for="choice_no">Non</label>
+  <p><br>Veuillez choisir la réponse qui vous correspond le plus. Il y a deux catégories de réponses :</br></p>
+  <p><br>L'anxiété : 0 : Aucune | 1 : Légère | 2 : Moyenne | 3 : Sévère</br></p>
+  <p><br>L'évitemment : 0 : Jamais | 1 : Occasionnel | 2 : Fréquent | 3 : Habituel</br></p>
+  <p><br>1 :Téléphoner en public.</br></p>
+  <div>
+    <input type="radio" id="Choice10a"
+     name="choice11" value=0>
+    <label for="Choice10a">0</label>
+
+    <input type="radio" id="Choice11a"
+     name="choice11" value=1 checked>
+    <label for="Choice11a">1</label>
+
+    <input type="radio" id="Choice12a"
+     name="choice11" value=2>
+    <label for="Choice12a">2</label>
+
+    <input type="radio" id="Choice13a"
+     name="choice11" value=3>
+    <label for="Choice13a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice10"
+     name="choice12" value=0>
+    <label for="Choice10">0</label>
+
+    <input type="radio" id="Choice11"
+     name="choice12" value=1 checked>
+    <label for="Choice11">1</label>
+
+    <input type="radio" id="Choice12"
+     name="choice12" value=2>
+    <label for="Choice12">2</label>
+
+    <input type="radio" id="Choice13"
+     name="choice12" value=3>
+    <label for="Choice13">3</label>
+  </div>
+  <p><br>2 :Participer à des activités en petits groupes.</br></p>
+  <div>
+    <input type="radio" id="Choice20a"
+     name="choice21" value=0>
+    <label for="Choice20a">0</label>
+
+    <input type="radio" id="Choice21a"
+     name="choice21" value=1 checked>
+    <label for="Choice21a">1</label>
+
+    <input type="radio" id="Choice22a"
+     name="choice21" value=2>
+    <label for="Choice22a">2</label>
+
+    <input type="radio" id="Choice23a"
+     name="choice21" value=3>
+    <label for="Choice23a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice20"
+     name="choice22" value=0>
+    <label for="Choice20">0</label>
+
+    <input type="radio" id="Choice21"
+     name="choice22" value=1 checked>
+    <label for="Choice21">1</label>
+
+    <input type="radio" id="Choice22"
+     name="choice22" value=2>
+    <label for="Choice22">2</label>
+
+    <input type="radio" id="Choice23"
+     name="choice22" value=3>
+    <label for="Choice23">3</label>
+  </div>
+  <p><br>3 :Manger dans des lieux publics.</br></p>
+  <div>
+    <input type="radio" id="Choice30a"
+     name="choice31" value=0>
+    <label for="Choice30a">0</label>
+
+    <input type="radio" id="Choice31a"
+     name="choice31" value=1 checked>
+    <label for="Choice31a">1</label>
+
+    <input type="radio" id="Choice32a"
+     name="choice31" value=2>
+    <label for="Choice32a">2</label>
+
+    <input type="radio" id="Choice33a"
+     name="choice31" value=3>
+    <label for="Choice33a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice30"
+     name="choice32" value=0>
+    <label for="Choice30">0</label>
+
+    <input type="radio" id="Choice31"
+     name="choice32" value=1 checked>
+    <label for="Choice31">1</label>
+
+    <input type="radio" id="Choice32"
+     name="choice32" value=2>
+    <label for="Choice32">2</label>
+
+    <input type="radio" id="Choice33"
+     name="choice32" value=3>
+    <label for="Choice33">3</label>
+  </div>
+  <p><br>4 :Boire avec d’autres personnes dans des lieux publics.</br></p>
+  <div>
+    <input type="radio" id="Choice40a"
+     name="choice41" value=0>
+    <label for="Choice40a">0</label>
+
+    <input type="radio" id="Choice41a"
+     name="choice41" value=1 checked>
+    <label for="Choice41a">1</label>
+
+    <input type="radio" id="Choice42a"
+     name="choice41" value=2>
+    <label for="Choice42a">2</label>
+
+    <input type="radio" id="Choice43a"
+     name="choice41" value=3>
+    <label for="Choice43a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice40"
+     name="choice42" value=0>
+    <label for="Choice40">0</label>
+
+    <input type="radio" id="Choice41"
+     name="choice42" value=1 checked>
+    <label for="Choice41">1</label>
+
+    <input type="radio" id="Choice42"
+     name="choice42" value=2>
+    <label for="Choice42">2</label>
+
+    <input type="radio" id="Choice43"
+     name="choice42" value=3>
+    <label for="Choice43">3</label>
+  </div>
+  <p><br>5 :Parler à quelqu'un en position d'autorité.</br></p>
+  <div>
+    <input type="radio" id="Choice50a"
+     name="choice51" value=0>
+    <label for="Choice50a">0</label>
+
+    <input type="radio" id="Choice51a"
+     name="choice51" value=1 checked>
+    <label for="Choice51a">1</label>
+
+    <input type="radio" id="Choice52a"
+     name="choice51" value=2>
+    <label for="Choice52a">2</label>
+
+    <input type="radio" id="Choice53a"
+     name="choice51" value=3>
+    <label for="Choice53a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice50"
+     name="choice52" value=0>
+    <label for="Choice50">0</label>
+
+    <input type="radio" id="Choice51"
+     name="choice52" value=1 checked>
+    <label for="Choice51">1</label>
+
+    <input type="radio" id="Choice52"
+     name="choice52" value=2>
+    <label for="Choice52">2</label>
+
+    <input type="radio" id="Choice53"
+     name="choice52" value=3>
+    <label for="Choice53">3</label>
+  </div>
+  <p><br>6 :Jouer la comédie, effectuer une performance, ou parler devant un auditoire.</br></p>
+  <div>
+    <input type="radio" id="Choice60a"
+     name="choice61" value=0>
+    <label for="Choice60a">0</label>
+
+    <input type="radio" id="Choice61a"
+     name="choice61" value=1 checked>
+    <label for="Choice61a">1</label>
+
+    <input type="radio" id="Choice62a"
+     name="choice61" value=2>
+    <label for="Choice62a">2</label>
+
+    <input type="radio" id="Choice63a"
+     name="choice61" value=3>
+    <label for="Choice63a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice60"
+     name="choice62" value=0>
+    <label for="Choice60">0</label>
+
+    <input type="radio" id="Choice61"
+     name="choice62" value=1 checked>
+    <label for="Choice61">1</label>
+
+    <input type="radio" id="Choice62"
+     name="choice62" value=2>
+    <label for="Choice62">2</label>
+
+    <input type="radio" id="Choice63"
+     name="choice62" value=3>
+    <label for="Choice63">3</label>
+  </div>
+  <p><br>7 :Aller à une soirée.</br></p>
+  <div>
+    <input type="radio" id="Choice70a"
+     name="choice71" value=0>
+    <label for="Choice70a">0</label>
+
+    <input type="radio" id="Choice71a"
+     name="choice71" value=1 checked>
+    <label for="Choice71a">1</label>
+
+    <input type="radio" id="Choice72a"
+     name="choice71" value=2>
+    <label for="Choice72a">2</label>
+
+    <input type="radio" id="Choice73a"
+     name="choice71" value=3>
+    <label for="Choice73a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice70"
+     name="choice72" value=0>
+    <label for="Choice70">0</label>
+
+    <input type="radio" id="Choice71"
+     name="choice72" value=1 checked>
+    <label for="Choice71">1</label>
+
+    <input type="radio" id="Choice72"
+     name="choice72" value=2>
+    <label for="Choice72">2</label>
+
+    <input type="radio" id="Choice73"
+     name="choice72" value=3>
+    <label for="Choice73">3</label>
+  </div>
+  <p><br>8 :Travailler en étant observé(e).</br></p>
+  <div>
+    <input type="radio" id="Choice80a"
+     name="choice81" value=0>
+    <label for="Choice80a">0</label>
+
+    <input type="radio" id="Choice81a"
+     name="choice81" value=1 checked>
+    <label for="Choice81a">1</label>
+
+    <input type="radio" id="Choice82a"
+     name="choice81" value=2>
+    <label for="Choice82a">2</label>
+
+    <input type="radio" id="Choice83a"
+     name="choice81" value=3>
+    <label for="Choice83a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice80"
+     name="choice82" value=0>
+    <label for="Choice80">0</label>
+
+    <input type="radio" id="Choice81"
+     name="choice82" value=1 checked>
+    <label for="Choice81">1</label>
+
+    <input type="radio" id="Choice82"
+     name="choice82" value=2>
+    <label for="Choice82">2</label>
+
+    <input type="radio" id="Choice83"
+     name="choice82" value=3>
+    <label for="Choice83">3</label>
+  </div>
+  <p><br>9 :Ecrire en étant observé(e).</br></p>
+  <div>
+    <input type="radio" id="Choice90a"
+     name="choice91" value=0>
+    <label for="Choice90a">0</label>
+
+    <input type="radio" id="Choice91a"
+     name="choice91" value=1 checked>
+    <label for="Choice91a">1</label>
+
+    <input type="radio" id="Choice92a"
+     name="choice91" value=2>
+    <label for="Choice92a">2</label>
+
+    <input type="radio" id="Choice93a"
+     name="choice91" value=3>
+    <label for="Choice93a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice90"
+     name="choice92" value=0>
+    <label for="Choice90">0</label>
+
+    <input type="radio" id="Choice91"
+     name="choice92" value=1 checked>
+    <label for="Choice91">1</label>
+
+    <input type="radio" id="Choice92"
+     name="choice92" value=2>
+    <label for="Choice92">2</label>
+
+    <input type="radio" id="Choice93"
+     name="choice92" value=3>
+    <label for="Choice93">3</label>
+  </div>
+  <p><br>10 :Téléphoner à une personne que vous ne connaissez pas très bien.</br></p>
+  <div>
+    <input type="radio" id="Choice100a"
+     name="choice101" value=0>
+    <label for="Choice100a">0</label>
+
+    <input type="radio" id="Choice101a"
+     name="choice101" value=1 checked>
+    <label for="Choice101a">1</label>
+
+    <input type="radio" id="Choice102a"
+     name="choice101" value=2>
+    <label for="Choice102a">2</label>
+
+    <input type="radio" id="Choice103a"
+     name="choice101" value=3>
+    <label for="Choice103a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choic100"
+     name="choice102" value=0>
+    <label for="Choice40">0</label>
+
+    <input type="radio" id="Choice101"
+     name="choice102" value=1 checked>
+    <label for="Choice41">1</label>
+
+    <input type="radio" id="Choice102"
+     name="choice102" value=2>
+    <label for="Choice102">2</label>
+
+    <input type="radio" id="Choice103"
+     name="choice102" value=3>
+    <label for="Choice103">3</label>
+  </div>
+  <p><br>11 :Parler à une personne que vous ne connaissez pas très bien.</br></p>
+  <div>
+    <input type="radio" id="Choice110a"
+     name="choice111" value=0>
+    <label for="Choice110a">0</label>
+
+    <input type="radio" id="Choice111a"
+     name="choice111" value=1 checked>
+    <label for="Choice111a">1</label>
+
+    <input type="radio" id="Choice112a"
+     name="choice111" value=2>
+    <label for="Choice112a">2</label>
+
+    <input type="radio" id="Choice113a"
+     name="choice111" value=3>
+    <label for="Choice113a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice110"
+     name="choice112" value=0>
+    <label for="Choice40">0</label>
+
+    <input type="radio" id="Choice111"
+     name="choice112" value=1 checked>
+    <label for="Choice41">1</label>
+
+    <input type="radio" id="Choice112"
+     name="choice112" value=2>
+    <label for="Choice42">2</label>
+
+    <input type="radio" id="Choice113"
+     name="choice112" value=3>
+    <label for="Choice113">3</label>
+  </div>
+  <p><br>12 :Rencontrer des inconnu(e)s.</br></p>
+  <div>
+    <input type="radio" id="Choice120a"
+     name="choice121" value=0>
+    <label for="Choice120a">0</label>
+
+    <input type="radio" id="Choice121a"
+     name="choice121" value=1 checked>
+    <label for="Choice121a">1</label>
+
+    <input type="radio" id="Choice122a"
+     name="choice121" value=2>
+    <label for="Choice122a">2</label>
+
+    <input type="radio" id="Choice123a"
+     name="choice121" value=3>
+    <label for="Choice123a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice120"
+     name="choice122" value=0>
+    <label for="Choice120">0</label>
+
+    <input type="radio" id="Choice121"
+     name="choice122" value=1 checked>
+    <label for="Choice121">1</label>
+
+    <input type="radio" id="Choice122"
+     name="choice122" value=2>
+    <label for="Choice122">2</label>
+
+    <input type="radio" id="Choice123"
+     name="choice122" value=3>
+    <label for="Choice123">3</label>
+  </div>
+  <p><br>13 :Uriner dans les toilettes publiques.</br></p>
+  <div>
+    <input type="radio" id="Choice130a"
+     name="choice131" value=0>
+    <label for="Choice130a">0</label>
+
+    <input type="radio" id="Choice131a"
+     name="choice131" value=1 checked>
+    <label for="Choice131a">1</label>
+
+    <input type="radio" id="Choice132a"
+     name="choice131" value=2>
+    <label for="Choice132a">2</label>
+
+    <input type="radio" id="Choice133a"
+     name="choice131" value=3>
+    <label for="Choice133a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice130"
+     name="choice132" value=0>
+    <label for="Choice130">0</label>
+
+    <input type="radio" id="Choice131"
+     name="choice132" value=1 checked>
+    <label for="Choice131">1</label>
+
+    <input type="radio" id="Choice132"
+     name="choice132" value=2>
+    <label for="Choice132">2</label>
+
+    <input type="radio" id="Choice133"
+     name="choice132" value=3>
+    <label for="Choice133">3</label>
+  </div>
+  <p><br>14 :Entrer dans une pièce où les autres personnes sont déjà assises.</br></p>
+  <div>
+    <input type="radio" id="Choice140a"
+     name="choice141" value=0>
+    <label for="Choice140a">0</label>
+
+    <input type="radio" id="Choice141a"
+     name="choice141" value=1 checked>
+    <label for="Choice141a">1</label>
+
+    <input type="radio" id="Choice142a"
+     name="choice141" value=2>
+    <label for="Choice142a">2</label>
+
+    <input type="radio" id="Choice143a"
+     name="choice141" value=3>
+    <label for="Choice143a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice140"
+     name="choice142" value=0>
+    <label for="Choice140">0</label>
+
+    <input type="radio" id="Choice141"
+     name="choice142" value=1 checked>
+    <label for="Choice141">1</label>
+
+    <input type="radio" id="Choice142"
+     name="choice142" value=2>
+    <label for="Choice142">2</label>
+
+    <input type="radio" id="Choice143"
+     name="choice142" value=3>
+    <label for="Choice143">3</label>
+  </div>
+  <p><br>15 :Etre le centre d'attention.</br></p>
+ <div>
+    <input type="radio" id="Choice150a"
+     name="choice151" value=0>
+    <label for="Choice150a">0</label>
+
+    <input type="radio" id="Choice151a"
+     name="choice151" value=1 checked>
+    <label for="Choice151a">1</label>
+
+    <input type="radio" id="Choice152a"
+     name="choice151" value=2>
+    <label for="Choice152a">2</label>
+
+    <input type="radio" id="Choice153a"
+     name="choice151" value=3>
+    <label for="Choice153a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice150"
+     name="choice152" value=0>
+    <label for="Choice150">0</label>
+
+    <input type="radio" id="Choice151"
+     name="choice152" value=1 checked>
+    <label for="Choice151">1</label>
+
+    <input type="radio" id="Choice152"
+     name="choice152" value=2>
+    <label for="Choice152">2</label>
+
+    <input type="radio" id="Choice153"
+     name="choice152" value=3>
+    <label for="Choice153">3</label>
+  </div>
+  <p><br>16 :Prendre la parole en réunion.</br></p>
+  <div>
+    <input type="radio" id="Choice160a"
+     name="choice161" value=0>
+    <label for="Choice160a">0</label>
+
+    <input type="radio" id="Choice161a"
+     name="choice161" value=1 checked>
+    <label for="Choice161a">1</label>
+
+    <input type="radio" id="Choice162a"
+     name="choice161" value=2>
+    <label for="Choice162a">2</label>
+
+    <input type="radio" id="Choice163a"
+     name="choice161" value=3>
+    <label for="Choice163a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice160"
+     name="choice162" value=0>
+    <label for="Choice160">0</label>
+
+    <input type="radio" id="Choice161"
+     name="choice162" value=1 checked>
+    <label for="Choice161">1</label>
+
+    <input type="radio" id="Choice162"
+     name="choice162" value=2>
+    <label for="Choice162">2</label>
+
+    <input type="radio" id="Choice163"
+     name="choice162" value=3>
+    <label for="Choice163">3</label>
+  </div>
+  <p><br>17 :Passer un test.</br></p>
+  <div>
+    <input type="radio" id="Choice170a"
+     name="choice171" value=0>
+    <label for="Choice170a">0</label>
+
+    <input type="radio" id="Choice171a"
+     name="choice171" value=1 checked>
+    <label for="Choice171a">1</label>
+
+    <input type="radio" id="Choice172a"
+     name="choice171" value=2>
+    <label for="Choice172a">2</label>
+
+    <input type="radio" id="Choice173a"
+     name="choice171" value=3>
+    <label for="Choice173a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice170"
+     name="choice172" value=0>
+    <label for="Choice170">0</label>
+
+    <input type="radio" id="Choice171"
+     name="choice172" value=1 checked>
+    <label for="Choice171">1</label>
+
+    <input type="radio" id="Choice172"
+     name="choice172" value=2>
+    <label for="Choice172">2</label>
+
+    <input type="radio" id="Choice173"
+     name="choice172" value=3>
+    <label for="Choice173">3</label>
+  </div>
+  <p><br>18 :Exprimer sa divergence ou son désaccord à une personne que vous ne connaissez pas très bien.</br></p>
+  <div>
+    <input type="radio" id="Choice180a"
+     name="choice181" value=0>
+    <label for="Choice180a">0</label>
+
+    <input type="radio" id="Choice181a"
+     name="choice181" value=1 checked>
+    <label for="Choice181a">1</label>
+
+    <input type="radio" id="Choice182a"
+     name="choice181" value=2>
+    <label for="Choice182a">2</label>
+
+    <input type="radio" id="Choice183a"
+     name="choice181" value=3>
+    <label for="Choice183a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice180"
+     name="choice182" value=0>
+    <label for="Choice180">0</label>
+
+    <input type="radio" id="Choice181"
+     name="choice182" value=1 checked>
+    <label for="Choice181">1</label>
+
+    <input type="radio" id="Choice182"
+     name="choice182" value=2>
+    <label for="Choice182">2</label>
+
+    <input type="radio" id="Choice183"
+     name="choice182" value=3>
+    <label for="Choice183">3</label>
+  </div>
+  <p><br>19 :Regarder dans les yeux une personne que vous ne connaissez pas très bien.</br></p>
+  <div>
+    <input type="radio" id="Choice190a"
+     name="choice191" value=0>
+    <label for="Choice190a">0</label>
+
+    <input type="radio" id="Choice191a"
+     name="choice191" value=1 checked>
+    <label for="Choice191a">1</label>
+
+    <input type="radio" id="Choice192a"
+     name="choice191" value=2>
+    <label for="Choice192a">2</label>
+
+    <input type="radio" id="Choice193a"
+     name="choice191" value=3>
+    <label for="Choice193a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice190"
+     name="choice192" value=0>
+    <label for="Choice190">0</label>
+
+    <input type="radio" id="Choice191"
+     name="choice192" value=1 checked>
+    <label for="Choice191">1</label>
+
+    <input type="radio" id="Choice192"
+     name="choice192" value=2>
+    <label for="Choice192">2</label>
+
+    <input type="radio" id="Choice193"
+     name="choice192" value=3>
+    <label for="Choice193">3</label>
+  </div>
+  <p><br>20 :Effectuer un compte-rendu à un groupe.</br></p>
+  <div>
+    <input type="radio" id="Choice200a"
+     name="choice201" value=0>
+    <label for="Choice200a">0</label>
+
+    <input type="radio" id="Choice201a"
+     name="choice201" value=1 checked>
+    <label for="Choice201a">1</label>
+
+    <input type="radio" id="Choice202a"
+     name="choice201" value=2>
+    <label for="Choice202a">2</label>
+
+    <input type="radio" id="Choice203a"
+     name="choice201" value=3>
+    <label for="Choice203a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice200"
+     name="choice202" value=0>
+    <label for="Choice200">0</label>
+
+    <input type="radio" id="Choice201"
+     name="choice202" value=1 checked>
+    <label for="Choice201">1</label>
+
+    <input type="radio" id="Choice202"
+     name="choice202" value=2>
+    <label for="Choice202">2</label>
+
+    <input type="radio" id="Choice203"
+     name="choice202" value=3>
+    <label for="Choice203">3</label>
+  </div>
+  <p><br>21 :Essayer de séduire une personne.</br></p>
+  <div>
+    <input type="radio" id="Choice210a"
+     name="choice211" value=0>
+    <label for="Choice210a">0</label>
+
+    <input type="radio" id="Choice211a"
+     name="choice211" value=1 checked>
+    <label for="Choice211a">1</label>
+
+    <input type="radio" id="Choice212a"
+     name="choice211" value=2>
+    <label for="Choice212a">2</label>
+
+    <input type="radio" id="Choice213a"
+     name="choice211" value=3>
+    <label for="Choice213a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice210"
+     name="choice212" value=0>
+    <label for="Choice210">0</label>
+
+    <input type="radio" id="Choice211"
+     name="choice212" value=1 checked>
+    <label for="Choice211">1</label>
+
+    <input type="radio" id="Choice212"
+     name="choice212" value=2>
+    <label for="Choice212">2</label>
+
+    <input type="radio" id="Choice213"
+     name="choice212" value=3>
+    <label for="Choice213">3</label>
+  </div>
+  <p><br>22 :Rapporter un article dans un magasin.</br></p>
+  <div>
+    <input type="radio" id="Choice220a"
+     name="choice221" value=0>
+    <label for="Choice220a">0</label>
+
+    <input type="radio" id="Choice221a"
+     name="choice221" value=1 checked>
+    <label for="Choice221a">1</label>
+
+    <input type="radio" id="Choice222a"
+     name="choice221" value=2>
+    <label for="Choice222a">2</label>
+
+    <input type="radio" id="Choice223a"
+     name="choice221" value=3>
+    <label for="Choice223a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice220"
+     name="choice222" value=0>
+    <label for="Choice220">0</label>
+
+    <input type="radio" id="Choice221"
+     name="choice222" value=1 checked>
+    <label for="Choice221">1</label>
+
+    <input type="radio" id="Choice222"
+     name="choice222" value=2>
+    <label for="Choice222">2</label>
+
+    <input type="radio" id="Choice223"
+     name="choice222" value=3>
+    <label for="Choice223">3</label>
+  </div>
+  <p><br>23 :Donner une réception.</br></p>
+ <div>
+    <input type="radio" id="Choice230a"
+     name="choice231" value=0>
+    <label for="Choice230a">0</label>
+
+    <input type="radio" id="Choice231a"
+     name="choice231" value=1 checked>
+    <label for="Choice231a">1</label>
+
+    <input type="radio" id="Choice232a"
+     name="choice231" value=2>
+    <label for="Choice232a">2</label>
+
+    <input type="radio" id="Choice233a"
+     name="choice231" value=3>
+    <label for="Choice233a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice230"
+     name="choice232" value=0>
+    <label for="Choice230">0</label>
+
+    <input type="radio" id="Choice231"
+     name="choice232" value=1 checked>
+    <label for="Choice231">1</label>
+
+    <input type="radio" id="Choice232"
+     name="choice232" value=2>
+    <label for="Choice232">2</label>
+
+    <input type="radio" id="Choice233"
+     name="choice232" value=3>
+    <label for="Choice233">3</label>
+  </div>
+  <p><br>24 :Résister à un vendeur très insistant.</br></p>
+  <div>
+    <input type="radio" id="Choice240a"
+     name="choice241" value=0>
+    <label for="Choice240a">0</label>
+
+    <input type="radio" id="Choice241a"
+     name="choice241" value=1 checked>
+    <label for="Choice241a">1</label>
+
+    <input type="radio" id="Choice242a"
+     name="choice241" value=2>
+    <label for="Choice242a">2</label>
+
+    <input type="radio" id="Choice243a"
+     name="choice241" value=3>
+    <label for="Choice243a">3</label>
+  </div>
+  <div>
+    <input type="radio" id="Choice240"
+     name="choice242" value=0>
+    <label for="Choice240">0</label>
+
+    <input type="radio" id="Choice241"
+     name="choice242" value=1 checked>
+    <label for="Choice241">1</label>
+
+    <input type="radio" id="Choice242"
+     name="choice242" value=2>
+    <label for="Choice242">2</label>
+
+    <input type="radio" id="Choice243"
+     name="choice242" value=3>
+    <label for="Choice243">3</label>
+  </div>
+  <div>
+    <button type="submit">Envoyer</button>
+  </div>
+</form>
+</body>
+</html>

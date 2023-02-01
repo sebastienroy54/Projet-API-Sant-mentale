@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affirmation de soi</title>
+</head>
+<body>
+<form action="http://localhost:5000/Resultats_questionnaire" method="post">
+  <p>Avez-vous déjà réalisé ce questionnaire ?</p>
+     <input type="radio" id="choice_yes"
+     name="verification" value="affirmation">
+     <label for="choice_yes">Oui</label>
+
+     <input type="radio" id="choice_no"
+     name="verification" value="affirmation" checked>
+     <label for="choice_no">Non</label>
+  <p>Veuillez choisir la réponse qui vous correspond le plus : (1 : Tout à fait vrai | 2 : Vrai | 3 : Plutôt vrai | 4 : Plutôt faux | 5 : Faux | 6 : Tout à fait faux)</p>
+  <p><br>1 :La plupart des gens semblent être plus agressifs et s'affirmer mieux que moi.</br></p>
+  <div>
+    <input type="radio" id="Choice11"
+     name="choice1" value=6 checked>
+    <label for="Choice11">1</label>
+
+    <input type="radio" id="Choice12"
+     name="choice1" value=5>
+    <label for="Choice12">2</label>
+
+    <input type="radio" id="Choice13"
+     name="choice1" value=4>
+    <label for="Choice13">3</label>
+
+    <input type="radio" id="Choice14"
+     name="choice1" value=3>
+    <label for="Choice14">4</label>
+
+    <input type="radio" id="Choice15"
+     name="choice1" value=2>
+    <label for="Choice15">5</label>
+
+    <input type="radio" id="Choice16"
+     name="choice1" value=1>
+    <label for="Choice16">6</label>
+  </div>
+  <p><br>2 :Il m'arrive par timidité d'hésiter à donner ou à accepter des rendez-vous.</br></p>
+  <div>
+    <input type="radio" id="Choice21"
+     name="choice2" value=6 checked>
+    <label for="Choice21">1</label>
+
+    <input type="radio" id="Choice22"
+     name="choice2" value=5>
+    <label for="Choice22">2</label>
+
+    <input type="radio" id="Choice23"
+     name="choice2" value=4>
+    <label for="Choice23">3</label>
+
+    <input type="radio" id="Choice24"
+     name="choice2" value=3>
+    <label for="Choice24">4</label>
+
+    <input type="radio" id="Choice25"
+     name="choice2" value=2>
+    <label for="Choice25">5</label>
+
+    <input type="radio" id="Choice26"
+     name="choice2" value=1>
+    <label for="Choice26">6</label>
+  </div>
+  <p><br>3 :Quand au restaurant la nourriture ne me satisfait pas, je m'en plains au serveur.</br></p>
+  <div>
+    <input type="radio" id="Choice31"
+     name="choice3" value=6 checked>
+    <label for="Choice31">1</label>
+
+    <input type="radio" id="Choice32"
+     name="choice3" value=5>
+    <label for="Choice32">2</label>
+
+    <input type="radio" id="Choice33"
+     name="choice3" value=4>
+    <label for="Choice33">3</label>
+
+    <input type="radio" id="Choice34"
+     name="choice3" value=3>
+    <label for="Choice34">4</label>
+
+    <input type="radio" id="Choice35"
+     name="choice3" value=2>
+    <label for="Choice35">5</label>
+
+    <input type="radio" id="Choice36"
+     name="choice3" value=1>
+    <label for="Choice36">6</label>
+  </div>
+  <p><br>4 :J'évite soigneusement de blesser les sentiments des autres, même quand je sens que j'ai été offensé.</br></p>
+  <div>
+    <input type="radio" id="Choice41"
+     name="choice4" value=6 checked>
+    <label for="Choice41">1</label>
+
+    <input type="radio" id="Choice42"
+     name="choice4" value=5>
+    <label for="Choice42">2</label>
+
+    <input type="radio" id="Choice43"
+     name="choice4" value=4>
+    <label for="Choice43">3</label>
+
+    <input type="radio" id="Choice44"
+     name="choice4" value=3>
+    <label for="Choice44">4</label>
+
+    <input type="radio" id="Choice45"
+     name="choice4" value=2>
+    <label for="Choice45">5</label>
+
+    <input type="radio" id="Choice46"
+     name="choice4" value=1>
+    <label for="Choice46">6</label>
+  </div>
+  <p><br>5 :Si un vendeur s'est donné beaucoup de mal pour me présenter une marchandise qui ne me convient pas tout à fait, il m'est difficile de dire "non".</br></p>
+  <div>
+    <input type="radio" id="Choice51"
+     name="choice5" value=6 checked>
+    <label for="Choice51">1</label>
+
+    <input type="radio" id="Choice52"
+     name="choice5" value=5 checked>
+    <label for="Choice52">2</label>
+
+    <input type="radio" id="Choice53"
+     name="choice5" value=4 checked>
+    <label for="Choice53">3</label>
+
+    <input type="radio" id="Choice54"
+     name="choice5" value=3 checked>
+    <label for="Choice54">4</label>
+
+    <input type="radio" id="Choice55"
+     name="choice5" value=2 checked>
+    <label for="Choice55">5</label>
+
+    <input type="radio" id="Choice56"
+     name="choice5" value=1 checked>
+    <label for="Choice56">6</label>
+  </div>
+  <p><br>6 :Quand on me demande de faire quelque chose, j'insiste pour en connaître les raisons.</br></p>
+  <div>
+    <input type="radio" id="Choice61"
+     name="choice6" value=1 checked>
+    <label for="Choice61">1</label>
+
+    <input type="radio" id="Choice62"
+     name="choice6" value=2>
+    <label for="Choice62">2</label>
+
+    <input type="radio" id="Choice63"
+     name="choice6" value=3>
+    <label for="Choice63">3</label>
+
+    <input type="radio" id="Choice64"
+     name="choice6" value=4>
+    <label for="Choice64">4</label>
+
+    <input type="radio" id="Choice65"
+     name="choice6" value=5>
+    <label for="Choice65">5</label>
+
+    <input type="radio" id="Choice66"
+     name="choice6" value=6>
+    <label for="Choice66">6</label>
+  </div>
+  <p><br>7 :Il m'arrive de chercher une bonne et saine discussion.</br></p>
+  <div>
+    <input type="radio" id="Choice71"
+     name="choice7" value=1 checked>
+    <label for="Choice71">1</label>
+
+    <input type="radio" id="Choice72"
+     name="choice7" value=2>
+    <label for="Choice72">2</label>
+
+    <input type="radio" id="Choice73"
+     name="choice7" value=3>
+    <label for="Choice73">3</label>
+
+    <input type="radio" id="Choice74"
+     name="choice7" value=4>
+    <label for="Choice74">4</label>
+
+    <input type="radio" id="Choice75"
+     name="choice7" value=5>
+    <label for="Choice75">5</label>
+
+    <input type="radio" id="Choice76"
+     name="choice7" value=6>
+    <label for="Choice76">6</label>
+  </div>
+  <p><br>8 :Je lutte pour réussir aussi bien que la plupart des gens qui sont dans ma situation.</br></p>
+  <div>
+    <input type="radio" id="Choice81"
+     name="choice8" value=1 checked>
+    <label for="Choice81">1</label>
+
+    <input type="radio" id="Choice82"
+     name="choice8" value=2>
+    <label for="Choice82">2</label>
+
+    <input type="radio" id="Choice83"
+     name="choice8" value=3>
+    <label for="Choice83">3</label>
+
+    <input type="radio" id="Choice84"
+     name="choice8" value=4>
+    <label for="Choice84">4</label>
+
+    <input type="radio" id="Choice85"
+     name="choice8" value=5>
+    <label for="Choice85">5</label>
+
+    <input type="radio" id="Choice86"
+     name="choice8" value=6>
+    <label for="Choice86">6</label>
+  </div>
+  <p><br>9 :A la vérité, les gens profitent souvent de moi.</br></p>
+  <div>
+    <input type="radio" id="Choice91"
+     name="choice9" value=6 checked>
+    <label for="Choice91">1</label>
+
+    <input type="radio" id="Choice92"
+     name="choice9" value=5>
+    <label for="Choice92">2</label>
+
+    <input type="radio" id="Choice93"
+     name="choice9" value=4>
+    <label for="Choice93">3</label>
+
+    <input type="radio" id="Choice94"
+     name="choice9" value=3>
+    <label for="Choice94">4</label>
+
+    <input type="radio" id="Choice95"
+     name="choice9" value=2>
+    <label for="Choice95">5</label>
+
+    <input type="radio" id="Choice96"
+     name="choice9" value=1>
+    <label for="Choice96">6</label>
+  </div>
+  <p><br>10 :J'aime engager la conversation avec de nouvelles personnes.</br></p>
+  <div>
+    <input type="radio" id="Choice101"
+     name="choice10" value=6 checked>
+    <label for="Choice101">1</label>
+
+    <input type="radio" id="Choice102"
+     name="choice10" value=5>
+    <label for="Choice102">2</label>
+
+    <input type="radio" id="Choice103"
+     name="choice10" value=4>
+    <label for="Choice103">3</label>
+
+    <input type="radio" id="Choice104"
+     name="choice10" value=3>
+    <label for="Choice104">4</label>
+
+    <input type="radio" id="Choice105"
+     name="choice10" value=2>
+    <label for="Choice105">5</label>
+
+    <input type="radio" id="Choice106"
+     name="choice10" value=1>
+    <label for="Choice106">6</label>
+  </div>
+  <p><br>11 :Je ne sais pas quoi dire à des personnes attirantes du sexe opposé.</br></p>
+  <div>
+    <input type="radio" id="Choice111"
+     name="choice11" value=6 checked>
+    <label for="Choice111">1</label>
+
+    <input type="radio" id="Choice112"
+     name="choice11" value=5>
+    <label for="Choice112">2</label>
+
+    <input type="radio" id="Choice113"
+     name="choice11" value=4>
+    <label for="Choice113">3</label>
+
+    <input type="radio" id="Choice114"
+     name="choice11" value=3>
+    <label for="Choice114">4</label>
+
+    <input type="radio" id="Choice115"
+     name="choice11" value=2>
+    <label for="Choice115">5</label>
+
+    <input type="radio" id="Choice116"
+     name="choice11" value=1>
+    <label for="Choice116">6</label>
+  </div>
+  <p><br>12 :J'hésite à téléphoner à des sociétés et à des administrations.</br></p>
+  <div>
+    <input type="radio" id="Choice121"
+     name="choice12" value=6 checked>
+    <label for="Choice121">1</label>
+
+    <input type="radio" id="Choice122"
+     name="choice12" value=5>
+    <label for="Choice122">2</label>
+
+    <input type="radio" id="Choice123"
+     name="choice12" value=4>
+    <label for="Choice123">3</label>
+
+    <input type="radio" id="Choice124"
+     name="choice12" value=3>
+    <label for="Choice124">4</label>
+
+    <input type="radio" id="Choice125"
+     name="choice12" value=2>
+    <label for="Choice125">5</label>
+
+    <input type="radio" id="Choice126"
+     name="choice12" value=1>
+    <label for="Choice126">6</label>
+  </div>
+  <p><br>13 :Il me paraît plus facile de poser ma candidature à un emploi ou à un stage par écrit que de subir un entretien.</br></p>
+  <div>
+    <input type="radio" id="Choice131"
+     name="choice13" value=6 checked>
+    <label for="Choice131">1</label>
+
+    <input type="radio" id="Choice132"
+     name="choice13" value=5>
+    <label for="Choice132">2</label>
+
+    <input type="radio" id="Choice133"
+     name="choice13" value=4>
+    <label for="Choice133">3</label>
+
+    <input type="radio" id="Choice134"
+     name="choice13" value=3>
+    <label for="Choice134">4</label>
+
+    <input type="radio" id="Choice135"
+     name="choice13" value=2>
+    <label for="Choice135">5</label>
+
+    <input type="radio" id="Choice136"
+     name="choice13" value=1>
+    <label for="Choice136">6</label>
+  </div>
+  <p><br>14 :Je trouve qu'il est très embarrassant d'avoir à rendre une marchandise.</br></p>
+  <div>
+    <input type="radio" id="Choice141"
+     name="choice14" value=6 checked>
+    <label for="Choice141">1</label>
+
+    <input type="radio" id="Choice142"
+     name="choice14" value=5>
+    <label for="Choice142">2</label>
+
+    <input type="radio" id="Choice143"
+     name="choice14" value=4>
+    <label for="Choice143">3</label>
+
+    <input type="radio" id="Choice144"
+     name="choice14" value=3>
+    <label for="Choice144">4</label>
+
+    <input type="radio" id="Choice145"
+     name="choice14" value=2>
+    <label for="Choice145">5</label>
+
+    <input type="radio" id="Choice146"
+     name="choice14" value=1>
+    <label for="Choice146">6</label>
+  </div>
+  <p><br>15 :Si un parent proche et respecté m'ennuyait, je cacherais mes sentiments plutôt que d'exprimer ma contrariété.</br></p>
+  <div>
+    <input type="radio" id="Choice151"
+     name="choice15" value=6 checked>
+    <label for="Choice151">1</label>
+
+    <input type="radio" id="Choice152"
+     name="choice15" value=5>
+    <label for="Choice152">2</label>
+
+    <input type="radio" id="Choice153"
+     name="choice15" value=4>
+    <label for="Choice153">3</label>
+
+    <input type="radio" id="Choice154"
+     name="choice15" value=3>
+    <label for="Choice154">4</label>
+
+    <input type="radio" id="Choice155"
+     name="choice15" value=2>
+    <label for="Choice155">5</label>
+
+    <input type="radio" id="Choice156"
+     name="choice15" value=1>
+    <label for="Choice156">6</label>
+  </div>
+  <p><br>16 :Il m'est arrivé d'éviter de poser des questions de peur de paraître idiot.</br></p>
+  <div>
+    <input type="radio" id="Choice161"
+     name="choice16" value=6 checked>
+    <label for="Choice161">1</label>
+
+    <input type="radio" id="Choice162"
+     name="choice16" value=5>
+    <label for="Choice162">2</label>
+
+    <input type="radio" id="Choice163"
+     name="choice16" value=4>
+    <label for="Choice163">3</label>
+
+    <input type="radio" id="Choice164"
+     name="choice16" value=3>
+    <label for="Choice164">4</label>
+
+    <input type="radio" id="Choice165"
+     name="choice16" value=2>
+    <label for="Choice165">5</label>
+
+    <input type="radio" id="Choice166"
+     name="choice16" value=1>
+    <label for="Choice166">6</label>
+  </div>
+  <p><br>17 :Il m'arrive parfois, au cours d'une discussion, d'avoir peur d'être troublé au point de me mettre à trembler de tout mon corps.</br></p>
+  <div>
+    <input type="radio" id="Choice171"
+     name="choice17" value=6 checked>
+    <label for="Choice171">1</label>
+
+    <input type="radio" id="Choice172"
+     name="choice17" value=5>
+    <label for="Choice172">2</label>
+
+    <input type="radio" id="Choice173"
+     name="choice17" value=4>
+    <label for="Choice173">3</label>
+
+    <input type="radio" id="Choice174"
+     name="choice17" value=3>
+    <label for="Choice174">4</label>
+
+    <input type="radio" id="Choice175"
+     name="choice17" value=2>
+    <label for="Choice175">5</label>
+
+    <input type="radio" id="Choice176"
+     name="choice17" value=1>
+    <label for="Choice176">6</label>
+  </div>
+  <p><br>18 :Si un conférencier renommé et respecté faisait une affirmation que j'estime inexacte, j'exposerais quand même mon point de vue à l'auditoire.</br></p>
+  <div>
+    <input type="radio" id="Choice181"
+     name="choice18" value=1 checked>
+    <label for="Choice181">1</label>
+
+    <input type="radio" id="Choice182"
+     name="choice18" value=2>
+    <label for="Choice182">2</label>
+
+    <input type="radio" id="Choice183"
+     name="choice18" value=3>
+    <label for="Choice183">3</label>
+
+    <input type="radio" id="Choice184"
+     name="choice18" value=4>
+    <label for="Choice184">4</label>
+
+    <input type="radio" id="Choice185"
+     name="choice18" value=5>
+    <label for="Choice185">5</label>
+
+    <input type="radio" id="Choice186"
+     name="choice18" value=6>
+    <label for="Choice186">6</label>
+  </div>
+  <p><br>19 :J'évite de marchander.</br></p>
+  <div>
+    <input type="radio" id="Choice191"
+     name="choice19" value=6 checked>
+    <label for="Choice191">1</label>
+
+    <input type="radio" id="Choice192"
+     name="choice19" value=5>
+    <label for="Choice192">2</label>
+
+    <input type="radio" id="Choice193"
+     name="choice19" value=4>
+    <label for="Choice193">3</label>
+
+    <input type="radio" id="Choice194"
+     name="choice19" value=3>
+    <label for="Choice194">4</label>
+
+    <input type="radio" id="Choice195"
+     name="choice19" value=2>
+    <label for="Choice195">5</label>
+
+    <input type="radio" id="Choice196"
+     name="choice19" value=1>
+    <label for="Choice196">6</label>
+  </div>
+  <p><br>20 :Quand je fais quelque chose d'important ou de valable, je m'arrange pour que les autres le sachent.</br></p>
+  <div>
+    <input type="radio" id="Choice201"
+     name="choice20" value=1 checked>
+    <label for="Choice201">1</label>
+
+    <input type="radio" id="Choice202"
+     name="choice20" value=2>
+    <label for="Choice202">2</label>
+
+    <input type="radio" id="Choice203"
+     name="choice20" value=3>
+    <label for="Choice203">3</label>
+
+    <input type="radio" id="Choice204"
+     name="choice20" value=4>
+    <label for="Choice204">4</label>
+
+    <input type="radio" id="Choice205"
+     name="choice20" value=5>
+    <label for="Choice205">5</label>
+
+    <input type="radio" id="Choice206"
+     name="choice20" value=6>
+    <label for="Choice206">6</label>
+  </div>
+  <p><br>21 :J'exprime ouvertement et franchement mes sentiments.</br></p>
+  <div>
+    <input type="radio" id="Choice211"
+     name="choice21" value=1 checked>
+    <label for="Choice211">1</label>
+
+    <input type="radio" id="Choice212"
+     name="choice21" value=2>
+    <label for="Choice212">2</label>
+
+    <input type="radio" id="Choice213"
+     name="choice21" value=3>
+    <label for="Choice213">3</label>
+
+    <input type="radio" id="Choice214"
+     name="choice21" value=4>
+    <label for="Choice214">4</label>
+
+    <input type="radio" id="Choice215"
+     name="choice21" value=5>
+    <label for="Choice215">5</label>
+
+    <input type="radio" id="Choice216"
+     name="choice21" value=6>
+    <label for="Choice216">6</label>
+  </div>
+  <p><br>22 :Si quelqu'un a fait courir de faux bruits et des calomnies à mon sujet, je vais le voir aussitôt que possible pour lui "dire deux mots".</br></p>
+  <div>
+    <input type="radio" id="Choice221"
+     name="choice22" value=1 checked>
+    <label for="Choice221">1</label>
+
+    <input type="radio" id="Choice222"
+     name="choice22" value=2>
+    <label for="Choice222">2</label>
+
+    <input type="radio" id="Choice223"
+     name="choice22" value=3>
+    <label for="Choice223">3</label>
+
+    <input type="radio" id="Choice224"
+     name="choice22" value=4>
+    <label for="Choice224">4</label>
+
+    <input type="radio" id="Choice225"
+     name="choice22" value=5>
+    <label for="Choice225">5</label>
+
+    <input type="radio" id="Choice226"
+     name="choice22" value=6>
+    <label for="Choice226">6</label>
+  </div>
+  <p><br>23 :Il m'est souvent difficile de dire "non".</br></p>
+  <div>
+    <input type="radio" id="Choice231"
+     name="choice23" value=6 checked>
+    <label for="Choice231">1</label>
+
+    <input type="radio" id="Choice232"
+     name="choice23" value=5>
+    <label for="Choice232">2</label>
+
+    <input type="radio" id="Choice233"
+     name="choice23" value=4>
+    <label for="Choice233">3</label>
+
+    <input type="radio" id="Choice234"
+     name="choice23" value=3>
+    <label for="Choice234">4</label>
+
+    <input type="radio" id="Choice235"
+     name="choice23" value=2>
+    <label for="Choice235">5</label>
+
+    <input type="radio" id="Choice236"
+     name="choice23" value=1>
+    <label for="Choice236">6</label>
+  </div>
+  <p><br>24 :Je suis porté à me retenir plutôt qu'à faire une scène.</br></p>
+  <div>
+    <input type="radio" id="Choice241"
+     name="choice24" value=6 checked>
+    <label for="Choice241">1</label>
+
+    <input type="radio" id="Choice242"
+     name="choice24" value=5>
+    <label for="Choice242">2</label>
+
+    <input type="radio" id="Choice243"
+     name="choice24" value=4>
+    <label for="Choice243">3</label>
+
+    <input type="radio" id="Choice244"
+     name="choice24" value=3>
+    <label for="Choice244">4</label>
+
+    <input type="radio" id="Choice245"
+     name="choice24" value=2>
+    <label for="Choice245">5</label>
+
+    <input type="radio" id="Choice246"
+     name="choice24" value=1>
+    <label for="Choice246">6</label>
+  </div>
+  <p><br>25 :Je fais des réclamations quand le service est mal fait au restaurant ou ailleurs.</br></p>
+  <div>
+    <input type="radio" id="Choice251"
+     name="choice25" value=1 checked>
+    <label for="Choice251">1</label>
+
+    <input type="radio" id="Choice252"
+     name="choice25" value=2>
+    <label for="Choice252">2</label>
+
+    <input type="radio" id="Choice253"
+     name="choice25" value=3>
+    <label for="Choice253">3</label>
+
+    <input type="radio" id="Choice254"
+     name="choice25" value=4>
+    <label for="Choice254">4</label>
+
+    <input type="radio" id="Choice255"
+     name="choice25" value=5>
+    <label for="Choice255">5</label>
+
+    <input type="radio" id="Choice256"
+     name="choice25" value=6>
+    <label for="Choice256">6</label>
+  </div>
+  <p><br>26 :Quand on me fait un compliment, parfois je ne sais pas quoi répondre.</br></p>
+  <div>
+    <input type="radio" id="Choice261"
+     name="choice26" value=6 checked>
+    <label for="Choice261">1</label>
+
+    <input type="radio" id="Choice262"
+     name="choice26" value=5>
+    <label for="Choice262">2</label>
+
+    <input type="radio" id="Choice263"
+     name="choice26" value=4>
+    <label for="Choice263">3</label>
+
+    <input type="radio" id="Choice264"
+     name="choice26" value=3>
+    <label for="Choice264">4</label>
+
+    <input type="radio" id="Choice265"
+     name="choice26" value=2>
+    <label for="Choice265">5</label>
+
+    <input type="radio" id="Choice266"
+     name="choice26" value=1>
+    <label for="Choice266">6</label>
+  </div>
+  <p><br>27 :Si au théâtre ou à une conférence, mes voisins parlaient trop fort, je leur demanderais de se taire ou d'aller parler ailleurs.</br></p>
+  <div>
+    <input type="radio" id="Choice271"
+     name="choice27" value=1 checked>
+    <label for="Choice271">1</label>
+
+    <input type="radio" id="Choice272"
+     name="choice27" value=2>
+    <label for="Choice272">2</label>
+
+    <input type="radio" id="Choice273"
+     name="choice27" value=3>
+    <label for="Choice273">3</label>
+
+    <input type="radio" id="Choice274"
+     name="choice27" value=4>
+    <label for="Choice274">4</label>
+
+    <input type="radio" id="Choice275"
+     name="choice27" value=5>
+    <label for="Choice275">5</label>
+
+    <input type="radio" id="Choice276"
+     name="choice27" value=6>
+    <label for="Choice276">6</label>
+  </div>
+  <p><br>28 :Toute personne essayant de prendre ma place dans une queue aura à faire à moi.</br></p>
+  <div>
+    <input type="radio" id="Choice281"
+     name="choice28" value=1 checked>
+    <label for="Choice281">1</label>
+
+    <input type="radio" id="Choice282"
+     name="choice28" value=2>
+    <label for="Choice282">2</label>
+
+    <input type="radio" id="Choice283"
+     name="choice28" value=3>
+    <label for="Choice283">3</label>
+
+    <input type="radio" id="Choice284"
+     name="choice28" value=4>
+    <label for="Choice284">4</label>
+
+    <input type="radio" id="Choice285"
+     name="choice28" value=5>
+    <label for="Choice285">5</label>
+
+    <input type="radio" id="Choice286"
+     name="choice28" value=6>
+    <label for="Choice286">6</label>
+  </div>
+  <p><br>29 :Je suis prompt à exprimer une opinion.</br></p>
+  <div>
+    <input type="radio" id="Choice291"
+     name="choice29" value=1 checked>
+    <label for="Choice291">1</label>
+
+    <input type="radio" id="Choice292"
+     name="choice29" value=2>
+    <label for="Choice292">2</label>
+
+    <input type="radio" id="Choice293"
+     name="choice29" value=3>
+    <label for="Choice293">3</label>
+
+    <input type="radio" id="Choice294"
+     name="choice29" value=4>
+    <label for="Choice294">4</label>
+
+    <input type="radio" id="Choice295"
+     name="choice29" value=5>
+    <label for="Choice295">5</label>
+
+    <input type="radio" id="Choice296"
+     name="choice29" value=6>
+    <label for="Choice296">6</label>
+  </div>
+  <p><br>30 :Il m'arrive parfois d'être incapable de dire quoi que ce soit.</br></p>
+  <div>
+    <input type="radio" id="Choice301"
+     name="choice30" value=6 checked>
+    <label for="Choice301">1</label>
+
+    <input type="radio" id="Choice302"
+     name="choice30" value=5>
+    <label for="Choice302">2</label>
+
+    <input type="radio" id="Choice303"
+     name="choice30" value=4>
+    <label for="Choice303">3</label>
+
+    <input type="radio" id="Choice304"
+     name="choice30" value=3>
+    <label for="Choice304">4</label>
+
+    <input type="radio" id="Choice305"
+     name="choice30" value=2>
+    <label for="Choice305">5</label>
+
+    <input type="radio" id="Choice306"
+     name="choice30" value=1>
+    <label for="Choice306">6</label>
+  </div>
+
+  <div>
+    <button type="submit">Envoyer</button>
+  </div>
+</form>
+</body>
+</html>

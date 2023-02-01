@@ -1,0 +1,204 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "Ce projet vise à créer des questionnaires de santé mentale pour évaluer votre niveau de santé mentale dans différents domaines. Il comporte 6 questionnaires et chaque réponse est enregistrée dans une base de données pour donner une évolution à l'utilisateur.",
+    "version": "1.0.0",
+    "title": "Pojet de questionnaires de santé mentale",
+    "contact": {
+      "email": "sebastien.roy54@hotmail.fr"
+    },
+    "license": {
+      "name": "EPISEN département ITS",
+      "url": "https://episen.u-pec.fr/formations/technologies-pour-la-sante-its"
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Book Request",
+      "description": "Example API for requesting and return book requests"
+    }
+  ],
+  "paths": {
+    "/Choixquestionnaire": {
+      "get": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Reçoit les informations de la page index pour les rentrer dans la base de données",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page pour choisir un questionnaire",
+        "requestBody": {
+          "description": "Book Request Post Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bookRequestPostBody"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/id"
+            }
+          },
+          "400": {
+            "description": "Failed. Bad post data."
+          }
+        }
+      }
+    },
+    "/Questionnaire d'estime de soi": {
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page pour effectuer le questionnaire d'estime de soi",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      }
+    },
+    "/Questionnaire d'affirmation de soi": {
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page pour effectuer le questionnaire d'affirmation de soi",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      }
+    },
+    "/Questionnaire d’anxiété et de la dépression": {
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page pour effectuer le questionnaire d'anxiété et de dépression",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      }
+    },
+    "/Questionnaire d’anxiété sociale": {
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page pour effectuer le questionnaire d'anxiété sociale",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      }
+    },
+    "/Questionnaire de burn-out professionnel": {
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page pour effectuer le questionnaire de burn-out professionnel",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      }
+    },
+    "/Resultats_questionnaire": {
+      "post": {
+        "tags": [
+          "Book Request"
+        ],
+        "summary": "Mène vers la page où les résultats du questionnaire effectué s'affichent",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/bookRequests"
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "identifiant": {
+        "properties": {
+          "ident": {
+            "type": "string"
+          }
+        }
+      },
+      "mot de passe": {
+        "properties": {
+          "mot_de_passe": {
+            "type": "string"
+          }
+        }
+      },
+      "conclusion du test": {
+        "properties": {
+          "conclusion": {
+            "type": "string"
+          }
+        }
+      },
+      "nom du questionnaire": {
+        "properties": {
+          "nom_questionnaire": {
+            "type": "string"
+          }
+        }
+
+      }
+    }
+  }
+}

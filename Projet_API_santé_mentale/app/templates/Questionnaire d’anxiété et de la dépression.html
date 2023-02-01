@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anxiété et dépression</title>
+</head>
+<body>
+  <form action="http://localhost:5000/Resultats_questionnaire" method="post">
+  <p>Avez-vous déjà réalisé ce questionnaire ?</p>
+     <input type="radio" id="choice_yes"
+     name="verification" value="anxiete et depression">
+     <label for="choice_yes">Oui</label>
+
+     <input type="radio" id="choice_no"
+     name="verification" value="anxiete et depression" checked>
+     <label for="choice_no">Non</label>
+  <p>Veuillez choisir la réponse qui vous correspond le plus. Il y a deux partie, la première pour l'anxiété et la deuxième pour la dépression :</p>
+  <p>Partie Anxiété:</p>
+  <p><br>1 :Je me sens tendu ou énervé.</br></p>
+  <div>
+    <input type="radio" id="Choice11"
+     name="choice1" value=0 checked>
+    <label for="Choice11">0 : Jamais</label>
+
+    <input type="radio" id="Choice12"
+     name="choice1" value=1>
+    <label for="Choice12">1 : De temps en temps</label>
+
+    <input type="radio" id="Choice13"
+     name="choice1" value=2>
+    <label for="Choice13">2 : Souvent</label>
+
+    <input type="radio" id="Choice14"
+     name="choice1" value=3>
+    <label for="Choice14">3 : La plupart du temps</label>
+  </div>
+  <p><br>2 :J'ai une sensation de peur comme si quelque chose d'horrible allait m'arriver.</br></p>
+  <div>
+    <input type="radio" id="Choice21"
+     name="choice2" value=0 checked>
+    <label for="Choice21">0 : Pas du tout</label>
+
+    <input type="radio" id="Choice22"
+     name="choice2" value=1>
+    <label for="Choice22">1 : Un peu mais cela ne m'inquiète pas</label>
+
+    <input type="radio" id="Choice23"
+     name="choice2" value=2>
+    <label for="Choice23">2 : Oui mais ce n'est pas trop grave</label>
+
+    <input type="radio" id="Choice24"
+     name="choice2" value=3>
+    <label for="Choice24">3 : Oui très nettement</label>
+  </div>
+  <p><br>3 :Je me fais du souci .</br></p>
+  <div>
+    <input type="radio" id="Choice31"
+     name="choice3" value=0 checked>
+    <label for="Choice31">0 : Très occasionnellement</label>
+
+    <input type="radio" id="Choice32"
+     name="choice3" value=1>
+    <label for="Choice32">1 : Occasionnellement</label>
+
+    <input type="radio" id="Choice33"
+     name="choice3" value=2>
+    <label for="Choice33">2 : Assez souvent</label>
+
+    <input type="radio" id="Choice34"
+     name="choice3" value=3>
+    <label for="Choice34">3 : Très souvent</label>
+  </div>
+  <p><br>4 :Je peux rester tranquillement assis à ne rien faire et me sentir décontracté.</br></p>
+  <div>
+    <input type="radio" id="Choice41"
+     name="choice4" value=0 checked>
+    <label for="Choice41">0 : Oui quoiqu'il arrive</label>
+
+    <input type="radio" id="Choice42"
+     name="choice4" value=1>
+    <label for="Choice42">1 : Oui en général</label>
+
+    <input type="radio" id="Choice43"
+     name="choice4" value=2>
+    <label for="Choice43">2 : Rarement</label>
+
+    <input type="radio" id="Choice44"
+     name="choice4" value=3>
+    <label for="Choice44">3 : Jamais</label>
+  </div>
+  <p><br>5 :J'éprouve des sensations de peur et j'ai l'estomac noué.</br></p>
+  <div>
+    <input type="radio" id="Choice51"
+     name="choice5" value=0 checked>
+    <label for="Choice51">0 : Jamais</label>
+
+    <input type="radio" id="Choice52"
+     name="choice5" value=1>
+    <label for="Choice52">1 : Parfois</label>
+
+    <input type="radio" id="Choice53"
+     name="choice5" value=2>
+    <label for="Choice53">2 : Assez souvent</label>
+
+    <input type="radio" id="Choice54"
+     name="choice5" value=3>
+    <label for="Choice54">3 : Très souvent</label>
+  </div>
+  <p><br>6 :J'ai la bougeotte et n'arrive pas à tenir en place.</br></p>
+  <div>
+    <input type="radio" id="Choice61"
+     name="choice6" value=0 checked>
+    <label for="Choice61">0 : Pas du tout</label>
+
+    <input type="radio" id="Choice62"
+     name="choice6" value=1>
+    <label for="Choice62">1 : Pas tellement</label>
+
+    <input type="radio" id="Choice63"
+     name="choice6" value=2>
+    <label for="Choice63">2 : Un peu</label>
+
+    <input type="radio" id="Choice64"
+     name="choice6" value=3>
+    <label for="Choice64">3 : Oui c'est tout à fait le cas</label>
+  </div>
+  <p><br>7 :J'éprouve des sensations soudaines de panique.</br></p>
+  <div>
+    <input type="radio" id="Choice71"
+     name="choice7" value=0 checked>
+    <label for="Choice71">0 : Jamais</label>
+
+    <input type="radio" id="Choice72"
+     name="choice7" value=1>
+    <label for="Choice72">1 : Pas très souvent</label>
+
+    <input type="radio" id="Choice73"
+     name="choice7" value=2>
+    <label for="Choice73">2 : Assez souvent</label>
+
+    <input type="radio" id="Choice74"
+     name="choice7" value=3>
+    <label for="Choice74">3 : Vraiment très souvent</label>
+  </div>
+  <p>Partie Dépression:</p>
+  <p><br>1 :Je prends plaisir aux mêmes choses qu'autrefois.</br></p>
+  <div>
+    <input type="radio" id="Choice81"
+     name="choice8" value=0 checked>
+    <label for="Choice81">0 : Oui, tout autant</label>
+
+    <input type="radio" id="Choice82"
+     name="choice8" value=1>
+    <label for="Choice82">1 : Pas autant</label>
+
+    <input type="radio" id="Choice83"
+     name="choice8" value=2>
+    <label for="Choice83">2 : Un peu seulement</label>
+
+    <input type="radio" id="Choice84"
+     name="choice8" value=3>
+    <label for="Choice84">3 : Presque plus</label>
+  </div>
+  <p><br>2 :Je ris facilement et vois le bon côté des choses.</br></p>
+  <div>
+    <input type="radio" id="Choice91"
+     name="choice9" value=0 checked>
+    <label for="Choice91">0 : Autant que par le passé</label>
+
+    <input type="radio" id="Choice92"
+     name="choice9" value=1>
+    <label for="Choice92">1 : Plus autant qu'avant</label>
+
+    <input type="radio" id="Choice93"
+     name="choice9" value=2>
+    <label for="Choice93">2 : Vraiment moins qu'avant</label>
+
+    <input type="radio" id="Choice94"
+     name="choice9" value=3>
+    <label for="Choice94">3 : Plus du tout</label>
+  </div>
+  <p><br>3 :Je suis de bonne humeur.</br></p>
+  <div>
+    <input type="radio" id="Choice101"
+     name="choice10" value=0 checked>
+    <label for="Choice101">0 : La plupart du temps</label>
+
+    <input type="radio" id="Choice102"
+     name="choice10" value=1>
+    <label for="Choice102">1 : Assez souvent</label>
+
+    <input type="radio" id="Choice103"
+     name="choice10" value=2>
+    <label for="Choice103">2 : Rarement</label>
+
+    <input type="radio" id="Choice104"
+     name="choice10" value=3>
+    <label for="Choice104">3 : Jamais</label>
+  </div>
+  <p><br>4 :J'ai l'impression de fonctionner au ralenti.</br></p>
+  <div>
+    <input type="radio" id="Choice111"
+     name="choice11" value=0 checked>
+    <label for="Choice111">0 : Jamais</label>
+
+    <input type="radio" id="Choice112"
+     name="choice11" value=1>
+    <label for="Choice112">1 : Parfois</label>
+
+    <input type="radio" id="Choice113"
+     name="choice11" value=2>
+    <label for="Choice113">2 : Très souvent</label>
+
+    <input type="radio" id="Choice114"
+     name="choice11" value=3>
+    <label for="Choice114">3 : Presque toujours</label>
+  </div>
+  <p><br>5 :Je me m'intéresse plus à mon apparence .</br></p>
+  <div>
+    <input type="radio" id="Choice121"
+     name="choice12" value=0 checked>
+    <label for="Choice121">0 : J'y prête autant d'attention que par le passé</label>
+
+    <input type="radio" id="Choice122"
+     name="choice12" value=1>
+    <label for="Choice122">1 : Il se peut que je n'y fasse plus autant attention</label>
+
+    <input type="radio" id="Choice123"
+     name="choice12" value=2>
+    <label for="Choice123">2 : Je n'y accord pas autant d'attention que je devrais</label>
+
+    <input type="radio" id="Choice124"
+     name="choice12" value=3>
+    <label for="Choice124">3 : Plus du tout</label>
+  </div>
+  <p><br>6 :Je me réjouis d'avance à l'idée de faire certaines choses.</br></p>
+  <div>
+    <input type="radio" id="Choice131"
+     name="choice13" value=0 checked>
+    <label for="Choice131">0 : Autant qu'avant</label>
+
+    <input type="radio" id="Choice132"
+     name="choice13" value=1>
+    <label for="Choice132">1 : Un peu moins qu'avant</label>
+
+    <input type="radio" id="Choice133"
+     name="choice13" value=2>
+    <label for="Choice133">2 : Bien moins qu'avant</label>
+
+    <input type="radio" id="Choice134"
+     name="choice13" value=3>
+    <label for="Choice134">3 : Presque jamais</label>
+  </div>
+  <p><br>6 :Je peux prendre plaisir à un bon livre ou à une bonne émission radio ou télévision.</br></p>
+  <div>
+    <input type="radio" id="Choice141"
+     name="choice14" value=0 checked>
+    <label for="Choice141">0 : Souvent</label>
+
+    <input type="radio" id="Choice142"
+     name="choice14" value=1>
+    <label for="Choice142">1 : Parfois</label>
+
+    <input type="radio" id="Choice143"
+     name="choice13" value=2>
+    <label for="Choice143">2 : Rarement</label>
+
+    <input type="radio" id="Choice144"
+     name="choice14" value=3>
+    <label for="Choice144">3 : Très rarement</label>
+  </div>
+
+  <div>
+    <button type="submit">Envoyer</button>
+  </div>
+</form></p>
+</body>
+</html>

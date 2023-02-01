@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat de votre questionnaire</title>
+</head>
+<body>
+    <p>Bonjour {{ident}}, vous avez effectué un {{nom_questionnaire}} et voici le résultat :</p>
+    <p>{{conclusion}}</p>
+    <form action="http://localhost:5000/Choixquestionnaire" method=['GET']>
+        <button type="submit">Retour aux questionnaires</button>
+    </form>
+</body>
+</html>
